@@ -3,7 +3,16 @@
  */
 package org.example
 
+fun crearfun(){
+    val a = 3
+    val b = 7
+    val c = 4
+    val funcion = { x: Int -> a*x*x + b*x + c }
+    println(funcion)
+}
+fun creartabla(){
 
+}
 fun main() {
     val a = 8
     val b = 3
@@ -14,4 +23,5 @@ fun main() {
     }
     println("${a}x² + ${b}x + ${c}")
     
+
 }
