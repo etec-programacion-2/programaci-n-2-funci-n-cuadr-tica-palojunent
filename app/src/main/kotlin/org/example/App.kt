@@ -24,5 +24,14 @@ fun main() {
     println("Paso 1: ")
     println("La función cuadrática es: f(x) = $mostrarFuncion")
 
+     // mostrar tabla de valores de la función en el rango de -5 a 5
+   println("Paso 2: ")
+   println("\nTabla de valores de f(x):")
+   println(String.format("%5s %10s", "x", "f(x)"))
+   for (x in -5..5) {
+       val fx = calcularFuncion(a, b, c, x)
+       println(String.format("%5d %10d", x, fx))
+   }
+
   
 }
