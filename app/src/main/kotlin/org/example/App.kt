@@ -9,13 +9,13 @@ fun main() {
     val b = 3
     val c = 8
 
-    // aseguramos que 'a' no sea 0
+// aseguramos que 'a' no sea 0
     if (a == 0) {
         println("a no puede ser 0 en una función cuadrática.")
         return
     }
 
-    // print a la ecuación cuadrática
+// print a la ecuación cuadrática
     val mostrarFuncion = buildString {
         append("${a}x²")
         append(if (b >= 0) " + ${b}x" else " - ${-b}x")
@@ -24,7 +24,7 @@ fun main() {
     println("Paso 1: ")
     println("La función cuadrática es: f(x) = $mostrarFuncion")
 
-     // mostrar tabla de valores de la función en el rango de -5 a 5
+// mostrar tabla de valores de la función en el rango de -5 a 5
    println("Paso 2: ")
    println("\nTabla de valores de f(x):")
    println(String.format("%5s %10s", "x", "f(x)"))
@@ -33,7 +33,7 @@ fun main() {
        println(String.format("%5d %10d", x, fx))
    }
 
-   // cálculo de las raíces de la ecuación cuadrática
+// cálculo de las raíces de la ecuación cuadrática
    println("Paso 3: ")
    println("\nCálculo de las raíces:")
    calcularRaices(a.toDouble(), b.toDouble(), c.toDouble())
