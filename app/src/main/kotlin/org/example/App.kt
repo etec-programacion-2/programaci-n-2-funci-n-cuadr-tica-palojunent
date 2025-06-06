@@ -33,5 +33,31 @@ fun main() {
        println(String.format("%5d %10d", x, fx))
    }
 
-  
+   // cálculo de las raíces de la ecuación cuadrática
+   println("Paso 3: ")
+   println("\nCálculo de las raíces:")
+   calcularRaices(a.toDouble(), b.toDouble(), c.toDouble())
+}
+
+
+// funcion que calcula los valores de la función cuadrática
+fun calcularFuncion(a: Int, b: Int, c: Int, x: Int): Int {
+   return a * x * x + b * x + c
+}
+
+
+// función que calcula las raíces de la ecuación cuadrática utilizando el discriminante
+fun calcularRaices(a: Double, b: Double, c: Double) {
+   val discriminante = b * b - 4 * a * c
+   println("Discriminante (D) = %.2f".format(discriminante))
+
+
+   when {
+   // si el discriminante es mayor que 0, hay dos raíces reales diferentes
+       discriminante > 0 -> {
+       val x1 = (-b + sqrt(discriminante)) / (2 * a)
+       val x2 = (-b - sqrt(discriminante)) / (2 * a)
+       }
+   }
+
 }
